@@ -28,20 +28,20 @@ const ImageContainer = ({picNumber}) => {
         }
         return (
             <div className='w-full h-full relative'>
-            <img src={picToShow()} alt="happy dad pic" className='w-full rounded-full flex-shrink h-52'/>
-      {showSantaHat && <img src={SantaHat} className="w-full absolute -top-[5%] left-[18%] z-10 h-32 "/>}
+            <img src={picToShow()} alt="happy dad pic" className='w-auto rounded-full flex-shrink h-52'/>
+      {showSantaHat && <img src={SantaHat} className="w-auto absolute -top-[5%] left-[18%] z-10 h-32 "/>}
        </div> )
     }
     const HappyMumPic = ({show})=> {
         if(!show) return null;
         return(
-        <img src={HappyMum} alt="happy mum pic" className='w-full rounded-full ml-8 flex-shrink h-52'/>
+        <img src={HappyMum} alt="happy mum pic" className='w-auto rounded-full ml-8 flex-shrink h-52'/>
     )}
     return (
         <div className='flex py-6'>
                 <DadPicChoice />
                 <HappyMumPic show={picNumber !== 4 && picNumber !== 0}/> 
-               {picNumber === 4 && ( <img src={Cheers} alt="cheers!" className="w-full  flex-shrink h-52"/>
+               {picNumber === 4 && ( <img src={Cheers} alt="cheers!" className="w-auto flex-shrink h-52"/>
 )}
         </div>
     )
