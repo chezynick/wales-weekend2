@@ -9,12 +9,16 @@ import ThirdQuestion from './components/ThirdQuestion'
 
 const App = ()=> {
   const [picToShow, setPicToShow] = useState(0);
+  const [snowFlakes, setSnowFlakes] = useState(150)
   const moveAlong = () => {
-    setTimeout(()=>setPicToShow(picToShow + 1),500)
+    setTimeout(()=>{
+      setPicToShow(picToShow + 1);
+      setSnowFlakes(snowFlakes + 300)
+    },500)
   }
   return (
     <div className=" text-white w-full bg-gradient-to-b h-screen from-[#0d135c] via-[#2c348f] to-white ">
-     <Snowfall />
+     <Snowfall snowflakeCount={snowFlakes}/>
 
     <div className='w-full flex pt-12 flex-col justify-center items-center'>
       <h1 className="text-white text-5xl">To Mum and Dad</h1>
