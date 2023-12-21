@@ -29,7 +29,7 @@ const ImageContainer = ({picNumber}) => {
         return (
             <div className='w-full h-full relative'>
             <img src={picToShow()} alt="happy dad pic" className='w-auto rounded-full flex-shrink h-52'/>
-      {showSantaHat && <img src={SantaHat} className="w-auto absolute -top-[5%] left-[18%] z-10 h-32 "/>}
+      {showSantaHat && <img src={SantaHat} className="w-auto animate-bounce  absolute -top-[5%] left-[18%] z-10 h-32 "/>}
        </div> )
     }
     const HappyMumPic = ({show})=> {

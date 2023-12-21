@@ -20,9 +20,10 @@ const App = ()=> {
     <div className=" text-white w-full bg-gradient-to-b h-screen overflow-hidden from-[#0d135c] via-[#2c348f] to-white ">
      <Snowfall snowflakeCount={snowFlakes}/>
 
-    <div className='w-full flex pt-12 flex-col justify-center items-center'>
+  <div className='w-full flex pt-12 flex-col justify-center items-center'>
+  {picToShow === 0 &&(  <div className="flex flex-col items-center">
       <h1 className="text-white text-5xl">To Mum and Dad</h1>
-      <div className=' font-serif text-6xl'>Merry Christmas</div>
+      <div className=' font-serif text-6xl'>Merry Christmas</div></div>)}
     <div className="w-screen flex justify-center items-center">
   <Present onClick={()=> moveAlong()} showPresent={picToShow === 0}/> 
   <ImageContainer picNumber={picToShow} /></div>
