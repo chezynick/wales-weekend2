@@ -14,7 +14,7 @@ const App = ()=> {
     setTimeout(()=>{
       setPicToShow(picToShow + 1);
       setSnowFlakes(snowFlakes + 300)
-    },500)
+    },300)
   }
   return (
     <div className=" text-white w-full bg-gradient-to-b h-screen overflow-hidden from-[#0d135c] via-[#2c348f] to-white ">
