@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 
-
-const FirstQuestion = ({onClick}) => {
+const SecondQuestion = ({onClick}) => {
     const [checkBoxTicked, setCheckBoxTicked] = useState(false)
     const handleChange = () => {
         setCheckBoxTicked(true)
@@ -10,7 +9,7 @@ const FirstQuestion = ({onClick}) => {
     }
     return (
     <div className="flex text-white text-3xl justify-center space-x-6 items-center">
-    <div>How do you fancy a weekend away? </div> <input className="w-8 h-8" type="checkbox" checked={checkBoxTicked} onChange={handleChange}/>
+    <div>How about a weekend in wales? </div> <input className="w-8 h-8" type="checkbox" checked={checkBoxTicked} onChange={handleChange}/>
      </div>);
 };
-export default FirstQuestion;
+export default SecondQuestion;
