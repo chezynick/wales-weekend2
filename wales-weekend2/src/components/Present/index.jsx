@@ -1,7 +1,8 @@
 // eslint-disable-next-line react/prop-types
 const Present = ({ onClick, showPresent })=>{
+  if(!showPresent)return null;
 return (
-    <div className={`${showPresent ? 'opacity-100 w-72' : 'opacity-0 w-0'}  transition-all delay-200 flex h-72 justify-center py-4 `}>
+    <div className=" w-72  transition-all delay-200 flex h-72 justify-center py-4">
       <button type="button"  onClick={onClick} className="flex justify-center items-center">
       <div className="text-3xl pt-8 text-yellow-500">From Nick & Anne</div>
       <div className="relative w-[250px] h-[250px]">
