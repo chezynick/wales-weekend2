@@ -9,7 +9,7 @@ const HellYeahButton = ({onClick}) => {
     }
     const [play] = useSound(HoHoHo);
     return (
-        <button onClick={handleChange} className="flex justify-center items-center px-4 py-1 bg-red-800 text-yellow-400">Hell Yeah</button>
+        <button onClick={handleChange} className="flex justify-center ml-4 rounded-lg items-center px-4 py-1 bg-red-800 text-yellow-400">Hell Yeah!!</button>
     )
 }
 export default HellYeahButton
