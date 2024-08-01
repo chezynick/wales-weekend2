@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import Snowfall from 'react-snowfall'
-import FirstQuestion from './components/FirstQuestion'
-import ImageContainer from './components/ImageContainer'
-import Present from './components/Present'
-import SecondQuestion from './components/SecondQuestion'
-import Success from './components/Success'
-import SleighBells from './assets/sleighBells.mp3'
-import useSound from 'use-sound';
-import ThirdQuestion from './components/ThirdQuestion'
+// import { useState } from 'react'
+// import Snowfall from 'react-snowfall'
+// import FirstQuestion from './components/FirstQuestion'
+// import ImageContainer from './components/ImageContainer'
+// import Present from './components/Present'
+// import SecondQuestion from './components/SecondQuestion'
+// import Success from './components/Success'
+// import SleighBells from './assets/sleighBells.mp3'
+// import useSound from 'use-sound';
+// import ThirdQuestion from './components/ThirdQuestion'
 import ConfirmationPage from './components/ConfirmationPage'
 
 const App = ()=> {
@@ -22,7 +22,7 @@ const App = ()=> {
   // }
   // const [play] = useSound(SleighBells);
   return (
-    <div className=" text-white w-full bg-gradient-to-b h-screen overflow-hidden from-[#0d135c] via-[#2c348f] to-white ">
+    <div className=" text-white w-full bg-gradient-to-b h-screen overflow-hidden from-[#67c4fe] via-[#4891ea] to-[#39943e] ">
      <ConfirmationPage />
      {/* <Snowfall snowflakeCount={snowFlakes}/>
   
